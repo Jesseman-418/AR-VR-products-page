@@ -79,15 +79,17 @@ main {
 }
 
 .product-tabs li {
-  padding: 8px 12px; /* Adjusted padding */
+  padding: 10px 10px; 
   border: 1px solid #ddd;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-right: 20px;
+  background-color: #4CAF50;
+}
+.product-tabs a{
+  color: white;
+  font-size: 18px;
 }
 
-.product-tabs li.active {
-  background-color: #ddd;
-}
 
 .product-grid {
   display: grid;
