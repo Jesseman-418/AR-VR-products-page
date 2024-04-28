@@ -1,23 +1,3 @@
-/* CSS for responsiveness */
-/* Define mobile-first styles */
-/* Adjust layout for tablets and larger screens */
-@media screen and (min-width: 768px) {
-  header h1 {
-    font-size: 2em;
-  }
-}
-
-/* Style for voice command button */
-#voiceCommandButton {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
 body {
   background-color: rgb(225, 225, 225);
   font-family: sans-serif;
@@ -39,6 +19,21 @@ header {
   margin-top: 2vw; /* Adjust margin using viewport units */
 }
 
+/* Existing styles */
+
+.cta-buttons button {
+  /* Styles for the button */
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
 /* Add media queries for responsiveness */
 @media screen and (min-width: 768px) {
   header {
@@ -48,6 +43,8 @@ header {
     margin-top: 20px; /* Reset margin for larger screens */
   }
 }
+
+/* Other CSS styles remain the same */
 
 .cta-buttons a {
   padding: 10px 20px;
@@ -62,34 +59,35 @@ main {
   padding: 50px;
 }
 
-.prod {
+.prod{
   text-align: center;
   font-size: 20px;
 }
-
 .product-showcase {
   margin-bottom: 50px;
 }
 
 .product-tabs {
   display: flex;
+}
+
+.product-tabs {
   list-style: none;
+  display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
 .product-tabs li {
-  padding: 10px 10px; 
+  padding: 8px 12px; /* Adjusted padding */
   border: 1px solid #ddd;
   border-radius: 5px;
-  margin-right: 20px;
-  background-color: #4CAF50;
-}
-.product-tabs a{
-  color: white;
-  font-size: 18px;
+  margin-right: 10px;
 }
 
+.product-tabs li.active {
+  background-color: #ddd;
+}
 
 .product-grid {
   display: grid;
@@ -97,21 +95,50 @@ main {
   gap: 20px;
 }
 
+/* Add styles for individual product cards here */
+
 .product-card {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .product-card img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Ensure the image fills the container while maintaining aspect ratio */
   margin-bottom: 10px;
 }
 
@@ -122,13 +149,26 @@ main {
   margin-top: auto; /* Align text to the top */
 }
 
+
 .interactive-demo {
   font-size: 25px;
   text-align: center;
   margin-bottom: 20px; /* Add the missing value here */
 }
+.product-tabs a {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #4CAF50; /* Add border */
+  border-radius: 5px;
+}
 
-.download_app {
+.product-tabs a:hover {
+  background-color: #45a049; /* Darker shade of green on hover */
+}
+
+.download_app{
   border: white;
   border-radius: 5px;
   background-color: #4CAF50;
@@ -138,8 +178,7 @@ main {
   margin: 20px;
   font-size: 20px;
 }
-
-.download {
+.download{
   padding-top: 25px;
   font-size: 25px;
   font-weight: bold;

@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechVisions AR/VR Showroom</title>
     <link rel="stylesheet" href="main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-speech-api/0.9.0/web-speech-api.min.js"></script>
+    <style>
+      /* CSS for responsiveness */
+      /* Define mobile-first styles */
+      /* Adjust layout for tablets and larger screens */
+      @media screen and (min-width: 768px) {
+        /* Example: Adjust header font size for larger screens */
+        header h1 {
+          font-size: 2em;
+        }
+      }
+    </style>
   </head>
-
   <body>
     <header>
       <h1>Welcome to the TechVisions AR/VR Experience!</h1>
@@ -16,20 +25,11 @@
         products.
       </p>
       <div class="cta-buttons">
-        <a
-          id="learnMoreARButton"
-          target="_blank"
-          href="About-AR.html"
-          aria-label="Learn More About AR"
-          >Learn More About AR</a
-        >
-        <a
-          id="exploreVRButton"
-          target="_blank"
-          href="vr-prod.html"
-          aria-label="Explore VR Products"
-          >Explore VR Products</a
-        >
+        <a target="_blank" href="About-AR.html">Learn More About AR</a>
+        <a target="_blank" href="vr-prod.html">Explore VR Products</a>
+        <button id="voiceCommandButton" aria-label="Enable Voice Commands">
+          Enable Voice Commands
+        </button>
       </div>
     </header>
     <main>
@@ -37,20 +37,23 @@
         <h2>Our Products</h2>
         <ul class="product-tabs">
           <li class="active" data-tab="ar-products">
-            <a href="#" style="text-decoration: none">Augmented Reality</a>
+            <a href="#">Augmented Reality</a>
           </li>
           <li data-tab="vr-products">
-            <a href="#" style="text-decoration: none">Virtual Reality</a>
+            <a href="#">Virtual Reality</a>
           </li>
         </ul>
-        <div id="ar-products" class="product-grid active"></div>
-        <div id="vr-products" class="product-grid"></div>
+        <div id="ar-products" class="product-grid active">
+          <!-- AR product cards will be dynamically loaded here -->
+        </div>
+        <div id="vr-products" class="product-grid">
+          <!-- VR product cards will be dynamically loaded here -->
+        </div>
       </section>
       <hr />
       <section class="interactive-demo">
         <h3>Experience VR Now!</h3>
         <iframe
-          id="youTubeVideoId"
           width="100%"
           height="315"
           src="https://www.youtube.com/embed/hEdzv7D4CbQ"
@@ -63,7 +66,6 @@
           class="download_app"
           target="_blank"
           href="https://ar.snap.com/download?utm_campaign=LensStudio_NonBrand_IN&utm_content=LS_ProductPage&utm_medium=PAIDPLATFORM&utm_source=GoogleSEM&utm_term=AR_Software"
-          aria-label="Download AR App"
           >Download AR App</a
         >
       </section>
@@ -86,9 +88,6 @@
           <li><a href="#">Twitter</a></li>
         </ul>
       </section>
-
-      <!-- Voice command button -->
-      <button id="voiceCommandButton">Enable Voice Commands</button>
     </main>
 
     <script src="main.js"></script>

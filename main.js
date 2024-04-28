@@ -59,7 +59,16 @@ document.addEventListener("DOMContentLoaded", function() {
       image: "images/ar_glasses.jpeg",
       description: "Experience immersive augmented reality with the TechVision AR Glasses. These lightweight glasses offer crystal-clear visuals and spatial audio for an unparalleled AR experience. With built-in sensors and gesture recognition, interacting with virtual objects feels natural and intuitive."
     },
-    // ... other AR products
+    {
+      name: "TechVision AR Smartwatch",
+      image: "images/ar_smartwatch.jpeg",
+      description: "Stay connected and informed with the TechVision AR Smartwatch. This sleek smartwatch combines traditional timekeeping with advanced augmented reality features. Receive notifications, navigate your surroundings with AR maps, and track your fitness goals—all from your wrist."
+    },
+    {
+      name: "TechVision AR Headset",
+      image: "images/ar_headset.jpeg",
+      description: "Take your entertainment to the next level with the TechVision AR Headset. This cutting-edge headset delivers stunning visuals and immersive audio for gaming, movies, and more. With adjustable straps and ergonomic design, it's comfortable to wear for extended periods of time."
+    }
   ];
 
   const vrProducts = [
@@ -68,7 +77,16 @@ document.addEventListener("DOMContentLoaded", function() {
       image: "images/vr_headset.jpeg",
       description: "Dive into virtual worlds with the TechVision VR Headset. This high-performance headset offers lifelike graphics and responsive motion tracking for a truly immersive VR experience. Whether you're gaming or exploring virtual environments, the TechVision VR Headset delivers unmatched realism."
     },
-    // ... other VR products
+    {
+      name: "VR Gaming Chair",
+      image: "images/vr_gaming_chair.png",
+      description: "Enhance your gaming experience with the TechVision VR Gaming Chair. This ergonomic chair features built-in haptic feedback and integrated VR controls, allowing you to feel every movement and action in-game. Immerse yourself in virtual worlds like never before."
+    },
+    {
+      name: "VR Motion Controller",
+      image: "images/vr_motion_controller.jpeg",
+      description: "Get hands-on with virtual reality using the TechVision VR Motion Controller. This intuitive controller allows for precise movement and interaction in virtual environments. With ergonomic design and tactile feedback, it provides a seamless VR experience for gamers and creators alike."
+    }
   ];
 
   // Voice Recognition for Commands
