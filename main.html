@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechVisions AR/VR Showroom</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      /* CSS for responsiveness */
+      /* Define mobile-first styles */
+      /* Adjust layout for tablets and larger screens */
+      @media screen and (min-width: 768px) {
+        /* Example: Adjust header font size for larger screens */
+        header h1 {
+          font-size: 2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the TechVisions AR/VR Experience!</h1>
+      <p>
+        Explore the future of immersive technology with our innovative AR and VR
+        products.
+      </p>
+      <div class="cta-buttons">
+        <a target="_blank" href="About-AR.html">Learn More About AR</a>
+        <a target="_blank" href="vr-prod.html">Explore VR Products</a>
+      </div>
+    </header>
+    <main>
+      <section class="product-showcase">
+        <h2>Our Products</h2>
+        <div class="prod">Click on the tabs to view</div>
+        <ul class="product-tabs">
+          <li class="active" data-tab="ar-products">
+            <a href="#">Augmented Reality</a>
+          </li>
+          <li data-tab="vr-products">
+            <a href="#">Virtual Reality</a>
+          </li>
+        </ul>
+        <div id="ar-products" class="product-grid active">
+          <!-- AR product cards will be dynamically loaded here -->
+        </div>
+        <div id="vr-products" class="product-grid">
+          <!-- VR product cards will be dynamically loaded here -->
+        </div>
+      </section>
+      <hr />
+      <section class="interactive-demo">
+        <h3>Experience VR Now!</h3>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/hEdzv7D4CbQ"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <p class="download">Download a sample AR app to see for yourself.</p>
+        <br />
+        <a
+          class="download_app"
+          target="_blank"
+          href="https://ar.snap.com/download?utm_campaign=LensStudio_NonBrand_IN&utm_content=LS_ProductPage&utm_medium=PAIDPLATFORM&utm_source=GoogleSEM&utm_term=AR_Software"
+          >Download AR App</a
+        >
+      </section>
+      <br />
+      <br />
+      <br />
+      <section class="about-us">
+        <h2>About Us:</h2>
+        <p>
+          Introducing TechVisions Inc., a pioneering force in augmented reality
+          (AR) and virtual reality (VR). Established in Silicon Valley, our
+          mission is to revolutionize human interaction with technology. Through
+          innovation and collaboration, we're reshaping industries and pushing
+          the boundaries of immersive experiences. Join us as we redefine the
+          future of AR and VR, making imagination a reality.
+        </p>
+        <h2>Follow us on:</h2>
+        <ul class="social-media">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
